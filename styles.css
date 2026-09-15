@@ -89,7 +89,10 @@
 
 @media(max-width:760px) {
     .logo-link span {
-        display: none;
+        display: inline;
+        font-size: 14px;
+        font-weight: 700;
+        white-space: nowrap;
     }
 
     .logo-link img {
@@ -147,3 +150,4 @@
         border-radius: 16px;
     }
 }
+
