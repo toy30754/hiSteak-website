@@ -1,0 +1,76 @@
+# hiSteak 牛排店形象網站
+
+這是一個可直接開啟、可直接上傳 Cloudflare Pages 的靜態網站，不需要安裝開發環境或輸入終端機指令。
+
+網站使用 HTML、CSS、JavaScript。HTML 放內容，CSS 決定外觀，JavaScript 處理手機選單。圖片、字型和程式不依賴第三方 CDN。
+
+## 預覽與正式網站
+
+目前是形象網站初版，提供牛排風味介紹、品牌文案、用餐空間及門市資訊區塊。圖片是 AI 生成的示意素材；品牌文案、實際菜單、地址、電話及營業時間需要店家確認。沒有連接訂位系統。
+
+先將下載的 ZIP 解壓縮，再用 Chrome 或 Edge 開啟 index.html，就能在自己的電腦看見整個網站。只在自己電腦開啟檔案，其他人還不能連線。
+
+## 網站要放在哪裡
+
+將網站放到 Cloudflare Pages。它負責保管網站檔案並透過 Cloudflare 的全球網路提供給訪客，無需自己租虛擬主機或選伺服器地區，也不用讓自己的電腦一直開機。這一版純形象網站可先用 Pages 免費方案，網域續費仍是獨立項目。
+
+hiSteak.com 是訪客輸入的地址；Cloudflare Pages 是放網站的地方；GitHub 是保存網站版本的專案倉庫。只擁有 Cloudflare 帳號和網域，還不等於已經建立網站。
+
+## 最快上線：用滑鼠上傳
+
+1. 登入 https://dash.cloudflare.com/ 。
+2. 找到 Workers & Pages，選 Create application，進入 Pages 的建立入口。
+3. 選 Use direct upload 或 Drag and drop your files。不同後台版本可能顯示 Get started。
+4. 輸入專案名稱，例如 histeak；名稱已被使用時改成其他名稱。
+5. 將 hiSteak-website.zip 拖入上傳區域。這個 ZIP 的最外層已經有 index.html，直接上傳即可。
+6. 按 Deploy site 或 Save and Deploy。
+7. 完成後，以後台實際顯示的 pages.dev 網址開啟網站。這才是其他人也能連線的網址。
+
+這一版已經是完成的網站檔案，不需要另做建置。未來更新時，到同一個 Pages 專案選 Create a new deployment，上傳整個更新後的網站資料夾或 ZIP。
+
+## 綁定 hiSteak.com
+
+1. 先確認上一步的 pages.dev 網址正常。
+2. 在該 Pages 專案開啟 Custom domains。
+3. 選 Set up a domain，輸入 histeak.com，按照後台提示確認。
+4. 根網域 histeak.com 必須在這個 Cloudflare 帳號中啟用，且 nameservers 已正確指向 Cloudflare。只有註冊帳號或購買網域還不夠；若後台已顯示網域啟用，就可沿用。
+5. 如需 www.histeak.com，也在同一處另外新增。
+6. 等待網域與 HTTPS 憑證啟用後，測試 https://histeak.com/。
+
+請從 Pages 的 Custom domains 流程綁定，不要只自行新增 DNS 紀錄。DNS 或憑證生效時間以後台狀態為準。
+
+## GitHub 之後扮演什麼角色
+
+GitHub 可以保存每次修改，讓你需要時回到舊版本。Pages 的 Git 整合也可以在 GitHub 更新後自動發布網站。
+
+如果先選 Direct Upload，這個 Pages 專案不能直接切換成 Git 整合；之後要自動發布，需要另外建立 Git 整合的 Pages 專案，再重新綁定網域。若你一開始就要自動發布，也能全程用網頁按鈕完成：
+
+1. 在 GitHub 新增一個 repository，例如 histeak-website。
+2. 將 ZIP 解壓縮，用 Add file → Upload files 上傳 index.html、styles.css、script.js 和 assets 資料夾，再按 Commit changes。不要只把 ZIP 原封不動放到 GitHub；必須上傳解壓縮後的檔案。
+3. 到 Cloudflare 的 Workers & Pages → Create application → Pages → Import an existing Git repository。
+4. 連接 GitHub，授權並選擇剛才的 repository。
+5. Framework preset 選 None；Production branch 選 main；Build command 留空；Build output directory 填入一個小數點「.」，因為 index.html 位於 repository 最外層；Root directory 沿用預設。
+6. 按 Save and Deploy。之後在 GitHub 上傳或編輯檔案並儲存，Pages 就會自動更新。
+
+兩條上線路線擇一即可。第一次只想先看到可連線的網站，直接上傳最省步驟；預計持續自行修改，可一開始就選 Git 整合。
+
+## 替換照片
+
+- assets/steak-hero.jpg：首頁牛排主圖，建議用橫向、深色背景的餐點照。
+- assets/restaurant.jpg：用餐空間，建議用橫向店內照片。
+
+把自己的 JPG 照片換成相同檔名，覆蓋原檔即可。照片可以使用不同尺寸，版型會自動裁切；建議保持約 3:2 橫向比例。圖片需真正儲存為 JPG，不能只把 PNG 的副檔名改成 JPG。保留 assets 資料夾名稱，並一起上傳。
+
+文字內容位於 index.html。店家資訊確認後，請更新地址、電話、營業時間、品牌文案、圖片替代文字及頁尾的示意說明。如果暫時不熟悉編輯，直接提供正確文字與圖片，也能由我協助替換。
+
+## 官方參考資料
+
+查閱日期：2026-09-15。後台按鈕名稱可能隨介面更新。
+
+- Cloudflare Pages：https://www.cloudflare.com/products/pages/
+- 直接上傳：https://developers.cloudflare.com/pages/get-started/direct-upload/
+- 自訂網域：https://developers.cloudflare.com/pages/configuration/custom-domains/
+- Git 整合：https://developers.cloudflare.com/pages/configuration/git-integration/
+- 建置設定：https://developers.cloudflare.com/pages/configuration/build-configuration/
+
+上述為建議操作流程；本次並未登入或修改你的 Cloudflare 與 GitHub 帳號，也未綁定 hiSteak.com。
