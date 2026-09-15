@@ -1,128 +1,168 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f5f7">
-  <meta name="description" content="hiSteak 牛排形象網站。從牛排的風味，到讓人想多坐一會的空間，享受一頓剛剛好的美好。">
-  <meta property="og:title" content="hiSteak｜一口，就懂。">
-  <meta property="og:description" content="好牛排，好時光。一起把日常，過得有滋有味。">
-  <meta property="og:type" content="website">
-  <title>hiSteak｜一口，就懂。</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23111111'/%3E%3Ctext x='12' y='47' font-family='Arial,sans-serif' font-size='48' font-weight='700' fill='white'%3Eh%3C/text%3E%3Ccircle cx='49' cy='45' r='5' fill='%23eb642c'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f5f7">
+    <meta name="description" content="海牛排 Hi Steak｜台中南屯平價牛排。提供牛排、雞腿排、豬排與鐵板麵，歡迎到店享用或透過 Uber Eats 外送。">
+    <meta property="og:title" content="海牛排 Hi Steak｜台中南屯平價牛排">
+    <meta property="og:description" content="熱鐵板上桌，搭配荷包蛋、麵與濃郁醬汁，來海牛排享受滿足的一餐。">
+    <meta property="og:type" content="website">
+    <title>海牛排 Hi Steak｜台中南屯平價牛排</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23111111'/%3E%3Ctext x='12' y='47' font-family='Arial,sans-serif' font-size='48' font-weight='700' fill='white'%3Eh%3C/text%3E%3Ccircle cx='49' cy='45' r='5' fill='%23eb642c'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳至主要內容</a>
   <header class="site-header">
     <nav class="nav-shell" aria-label="主要導覽">
-      <a class="wordmark" href="#top" aria-label="hiSteak 首頁">hiSteak<span class="brand-dot">.</span></a>
+        <a class="wordmark logo-link" href="#top" aria-label="海牛排 Hi Steak 首頁">
+            <img src="assets/logo.jpg" alt="海牛排 Hi Steak Logo">
+            <span>海牛排 Hi Steak</span>
+        </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="開啟導覽選單"><span></span><span></span></button>
       <div class="nav-links" id="nav-links">
-        <a href="#steaks">牛排風味</a>
-        <a href="#story">關於 hiSteak</a>
-        <a href="#space">用餐空間</a>
-        <a class="nav-visit" href="#visit">門市資訊</a>
+          <a href="#steaks">招牌餐點</a>
+          <a href="#menu">菜單</a>
+          <a href="#story">關於海牛排</a>
+          <a class="nav-visit" href="#visit">門市資訊</a>
       </div>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow">GOOD STEAK. GOOD TIMES.</p>
-        <h1 id="hero-title">一口，就懂。</h1>
-        <p class="hero-description">好牛排，讓每一次相聚都值得。</p>
-        <div class="hero-actions">
-          <a class="button button-orange" href="#steaks">探索牛排</a>
-          <a class="text-link light-link" href="#story">認識 hiSteak <span aria-hidden="true">›</span></a>
-        </div>
-      </div>
-      <figure class="hero-visual">
-        <!-- 換照片：以自己的照片取代 assets/steak-hero.jpg，保留相同檔名。 -->
-        <img src="assets/steak-hero.jpg" width="1536" height="1024" alt="深色餐盤上的切片牛排，呈現焦香外層與粉嫩切面；示意照片" fetchpriority="high">
-      </figure>
-      <p class="hero-footnote">牛排，是主角。相聚，才是重點。</p>
-    </section>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+          <div class="hero-copy">
+              <p class="eyebrow">HI STEAK ・ TAICHUNG</p>
+              <h1 id="hero-title">熱鐵板上桌，<br>每一口都超滿足。</h1>
+              <p class="hero-description">海牛排 Hi Steak，提供平價又有份量的鐵板排餐，搭配荷包蛋、麵與濃郁醬汁，簡單就是好吃。</p>
+              <div class="hero-actions">
+                  <a class="button button-orange" href="#menu">查看菜單</a>
+                  <a class="text-link light-link" href="https://www.ubereats.com/tw/store/%E6%B5%B7%E7%89%9B%E6%8E%92-hi-steak/OaaZ4mz2W0aBt57IbIxc4g?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMiVFNiVCNSVCNyVFNyU4OSU5QiVFNiU4RSU5MkhpJTIwU1RFQUslMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjJDaElKQ3d6bk13QTlhVFFSQ2tyUXdpaFN1M3clMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIyZ29vZ2xlX3BsYWNlcyUyMiUyQyUyMmxhdGl0dWRlJTIyJTNBMjQuMTQxMTA0JTJDJTIybG9uZ2l0dWRlJTIyJTNBMTIwLjYzNjE3MjYlN0Q%3D&ps=1&sc=SEARCH_SUGGESTION" target="_blank" rel="noopener noreferrer">Uber Eats 點餐 <span aria-hidden="true">›</span></a>
+              </div>
+          </div>
+          <figure class="hero-visual">
+              <!-- 換照片：以自己的照片取代 assets/steak-hero.jpg，保留相同檔名。 -->
+              <img src="assets/steak-hero.jpg" width="1536" height="1024" alt="深色餐盤上的切片牛排，呈現焦香外層與粉嫩切面；示意照片" fetchpriority="high">
+          </figure>
+          <p class="hero-footnote">牛排，是主角。相聚，才是重點。</p>
+      </section>
 
-    <section class="flavor-section section-wrap" id="steaks" aria-labelledby="flavor-title">
-      <div class="section-heading">
-        <p class="eyebrow muted-eyebrow">FIND YOUR FAVORITE</p>
-        <h2 id="flavor-title">喜歡的口感，<br>各有精彩。</h2>
-        <p class="section-description">先認識風味，再找到你心中的那一口。</p>
-      </div>
-      <div class="flavor-grid">
-        <article class="flavor-card">
-          <span class="flavor-index">01 / RIBEYE</span>
-          <h3>肋眼。<br><span>濃郁派的最愛。</span></h3>
-          <p>油花帶來豐富香氣，入口飽滿。適合喜歡濃厚牛肉風味的你。</p>
-          <span class="flavor-tag">豐富油花 · 飽滿香氣</span>
-        </article>
-        <article class="flavor-card">
-          <span class="flavor-index">02 / TENDERLOIN</span>
-          <h3>菲力。<br><span>柔嫩，自有魅力。</span></h3>
-          <p>以細緻柔嫩見長，風味清爽。慢慢咀嚼，感受牛肉本身的滋味。</p>
-          <span class="flavor-tag">細緻柔嫩 · 清爽風味</span>
-        </article>
-        <article class="flavor-card">
-          <span class="flavor-index">03 / STRIPLOIN</span>
-          <h3>紐約客。<br><span>越嚼，越有味。</span></h3>
-          <p>紮實中帶有彈性，肉香鮮明。每一口，都有讓人回味的層次。</p>
-          <span class="flavor-tag">紮實口感 · 鮮明肉香</span>
-        </article>
-      </div>
-      <p class="section-note">以上為牛排部位的風味介紹；實際供應餐點與價格，待正式菜單公布。</p>
-    </section>
+      <section class="menu-section section-wrap" id="menu" aria-labelledby="menu-title">
+          <div class="section-heading">
+              <p class="eyebrow muted-eyebrow">MENU</p>
+              <h2 id="menu-title">完整菜單</h2>
+              <p class="section-description">主餐、雙拼加購、單點與價格，歡迎參考下方菜單。</p>
+          </div>
 
-    <section class="story-section" id="story" aria-labelledby="story-title">
-      <div class="story-inner">
-        <p class="eyebrow muted-eyebrow">HELLO, hiSteak.</p>
-        <h2 id="story-title">把日常，<br>過得<span class="orange-text">有滋有味。</span></h2>
-        <p class="story-copy">有時，是慶祝一件大事。<br>有時，只是想好好吃一頓。<br><br>我們想留下一個位置，<br>給喜歡牛排，也喜歡相聚的你。</p>
-        <a class="text-link dark-link" href="#space">看看用餐空間 <span aria-hidden="true">›</span></a>
-      </div>
-      <div class="story-signature" aria-hidden="true">hiSteak<span>.</span></div>
-    </section>
+          <div class="menu-card">
+              <img src="assets/menu.jpg" alt="海牛排菜單">
+          </div>
 
-    <section class="space-section" id="space" aria-labelledby="space-title">
-      <figure class="space-visual">
-        <!-- 換照片：以自己的照片取代 assets/restaurant.jpg，保留相同檔名。 -->
-        <img src="assets/restaurant.jpg" width="1536" height="1024" alt="暖色燈光與木質桌椅的餐廳空間；非實際門市的示意照片" loading="lazy">
-      </figure>
-      <div class="space-copy">
-        <p class="eyebrow">STAY A LITTLE LONGER</p>
-        <h2 id="space-title">再坐一會，<br>也很好。</h2>
-        <p>一張舒服的桌子，一段不用趕的時光。<br>美味之外，把空間留給彼此。</p>
-        <a class="text-link light-link" href="#visit">查看門市資訊 <span aria-hidden="true">›</span></a>
-      </div>
-      <span class="image-note">空間示意圖</span>
-    </section>
+          <div class="menu-actions">
+              <a class="button button-orange" href="https://www.ubereats.com/tw/store/%E6%B5%B7%E7%89%9B%E6%8E%92-hi-steak/OaaZ4mz2W0aBt57IbIxc4g?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMiVFNiVCNSVCNyVFNyU4OSU5QiVFNiU4RSU5MkhpJTIwU1RFQUslMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjJDaElKQ3d6bk13QTlhVFFSQ2tyUXdpaFN1M3clMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIyZ29vZ2xlX3BsYWNlcyUyMiUyQyUyMmxhdGl0dWRlJTIyJTNBMjQuMTQxMTA0JTJDJTIybG9uZ2l0dWRlJTIyJTNBMTIwLjYzNjE3MjYlN0Q%3D&ps=1&sc=SEARCH_SUGGESTION" target="_blank" rel="noopener noreferrer">
+                  Uber Eats 點餐
+              </a>
+          </div>
+      </section>
+      <section class="flavor-section section-wrap" id="steaks" aria-labelledby="flavor-title">
+          <div class="section-heading">
+              <p class="eyebrow muted-eyebrow">POPULAR DISHES</p>
+              <h2 id="flavor-title">招牌餐點，<br>每一道都很下飯。</h2>
+              <p class="section-description">熱騰騰鐵板現煎，搭配荷包蛋、鐵板麵與醬汁，就是海牛排最經典的滋味。</p>
+          </div>
 
-    <section class="visit-section section-wrap" id="visit" aria-labelledby="visit-title">
-      <div class="visit-intro">
-        <p class="eyebrow muted-eyebrow">SEE YOU AT hiSteak.</p>
-        <h2 id="visit-title">下一頓美好，<br>從這裡開始。</h2>
-        <p>期待和你，在餐桌上見。</p>
-      </div>
-      <div class="visit-details">
-        <!-- 將下方文字換成店家的真實資訊後再正式對外宣傳。 -->
-        <dl>
-          <div><dt>門市地址</dt><dd>地址確認後公布</dd></div>
-          <div><dt>營業時間</dt><dd>營業時間確認後公布</dd></div>
-          <div><dt>訂位方式</dt><dd>電話與訂位連結即將更新</dd></div>
-        </dl>
-        <p class="visit-note">門市資訊更新後，這裡會提供完整的到店與訂位方式。</p>
-      </div>
-    </section>
+          <div class="dish-grid">
+              <article class="dish-card">
+                  <img src="assets/food-1.jpg" alt="海牛排招牌排餐 1">
+                  <div class="dish-card-body">
+                      <h3>人氣牛排餐</h3>
+                      <p>經典鐵板排餐，搭配荷包蛋、鐵板麵與濃郁醬汁，簡單卻很滿足。</p>
+                  </div>
+              </article>
+
+              <article class="dish-card">
+                  <img src="assets/food-2.jpg" alt="海牛排招牌排餐 2">
+                  <div class="dish-card-body">
+                      <h3>特色排餐</h3>
+                      <p>香氣十足、份量實在，適合想吃得更豐富一點的你。</p>
+                  </div>
+              </article>
+
+              <article class="dish-card">
+                  <img src="assets/food3.jpg" alt="海牛排招牌排餐 3">
+                  <div class="dish-card-body">
+                      <h3>帶骨牛小排</h3>
+                      <p>厚實肉感與濃厚肉香，是喜歡大口吃肉的人不可錯過的人氣選擇。</p>
+                  </div>
+              </article>
+          </div>
+      </section>
+
+      <section class="story-section" id="story" aria-labelledby="story-title">
+          <div class="story-inner">
+              <p class="eyebrow muted-eyebrow">HELLO, HI STEAK.</p>
+              <h2 id="story-title">平價也能吃到，<br><span class="orange-text">滿足的一餐。</span></h2>
+              <p class="story-copy">海牛排希望帶給大家的，<br>是簡單、直接又有份量的好味道。<br><br>熱鐵板、香濃醬汁、熟悉的麵和荷包蛋，<br>就是很多人最懷念的那種鐵板排餐。</p>
+              <a class="text-link dark-link" href="#space">看看用餐空間 <span aria-hidden="true">›</span></a>
+          </div>
+          <div class="story-signature" aria-hidden="true">hiSteak<span>.</span></div>
+      </section>
+
+      <section class="space-section" id="space" aria-labelledby="space-title">
+          <figure class="space-visual">
+              <!-- 換照片：以自己的照片取代 assets/restaurant.jpg，保留相同檔名。 -->
+              <img src="assets/restaurant.jpg" width="1536" height="1024" alt="暖色燈光與木質桌椅的餐廳空間；非實際門市的示意照片" loading="lazy">
+          </figure>
+          <div class="space-copy">
+              <p class="eyebrow">STAY A LITTLE LONGER</p>
+              <h2 id="space-title">再坐一會，<br>也很好。</h2>
+              <p>一張舒服的桌子，一段不用趕的時光。<br>美味之外，把空間留給彼此。</p>
+              <a class="text-link light-link" href="#visit">查看門市資訊 <span aria-hidden="true">›</span></a>
+          </div>
+          <span class="image-note">空間示意圖</span>
+      </section>
+
+      <section class="visit-section section-wrap" id="visit" aria-labelledby="visit-title">
+          <div class="visit-intro">
+              <p class="eyebrow muted-eyebrow">SEE YOU AT hiSteak.</p>
+              <h2 id="visit-title">下一頓美好，<br>從這裡開始。</h2>
+              <p>期待和你，在餐桌上見。</p>
+          </div>
+          <div class="visit-details">
+              <!-- 將下方文字換成店家的真實資訊後再正式對外宣傳。 -->
+              <dl>
+                  <div>
+                      <dt>門市地址</dt>
+                      <dd>台中市南屯區南屯路二段721-1號<br>Taichung, 南屯區 408011 Taiwan</dd>
+                  </div>
+                  <div>
+                      <dt>營業時間</dt>
+                      <dd>下午 4:30 - 9:30</dd>
+                  </div>
+                  <div>
+                      <dt>外送平台</dt>
+                      <dd>
+                          <a href="https://www.ubereats.com/tw/store/%E6%B5%B7%E7%89%9B%E6%8E%92-hi-steak/OaaZ4mz2W0aBt57IbIxc4g?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMiVFNiVCNSVCNyVFNyU4OSU5QiVFNiU4RSU5MkhpJTIwU1RFQUslMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjJDaElKQ3d6bk13QTlhVFFSQ2tyUXdpaFN1M3clMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIyZ29vZ2xlX3BsYWNlcyUyMiUyQyUyMmxhdGl0dWRlJTIyJTNBMjQuMTQxMTA0JTJDJTIybG9uZ2l0dWRlJTIyJTNBMTIwLjYzNjE3MjYlN0Q%3D&ps=1&sc=SEARCH_SUGGESTION" target="_blank" rel="noopener noreferrer">
+                              Uber Eats 點我前往
+                          </a>
+                      </dd>
+                  </div>
+              </dl>
+              <p class="visit-note">歡迎到店用餐，也可透過 Uber Eats 直接下單外送。</p>
+</section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <p class="draft-note">本頁為網站初版預覽。圖片為 AI 生成示意，品牌文案待店家確認；實際餐點、環境及營業資訊以店家公布為準。</p>
+        <p class="draft-note">海牛排 Hi Steak｜台中南屯平價牛排，歡迎到店享用或使用 Uber Eats 外送服務。</p>
       <div class="footer-bottom">
-        <a class="wordmark footer-wordmark" href="#top" aria-label="hiSteak 回到頂端">hiSteak<span class="brand-dot">.</span></a>
-        <p>© <span id="year">2026</span> hiSteak. All rights reserved.</p>
+          <a class="wordmark footer-wordmark logo-link" href="#top" aria-label="海牛排 Hi Steak 回到頂端">
+              <img src="assets/logo.jpg" alt="海牛排 Hi Steak Logo">
+              <span>海牛排 Hi Steak</span>
+          </a>
+          <p>© <span id="year">2026</span> 海牛排 Hi Steak. All rights reserved.</p>
         <a class="back-top" href="#top">回到頂端 <span aria-hidden="true">↑</span></a>
       </div>
     </div>

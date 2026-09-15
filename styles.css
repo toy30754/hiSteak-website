@@ -13,3 +13,95 @@
 @media(max-width:360px){.nav-shell{padding:0 16px}.hero h1{font-size:45px}.hero-description{font-size:16px}.hero-actions{gap:15px}.section-wrap{padding-left:19px;padding-right:19px}h2,.story-section h2,.space-copy h2,.visit-intro h2{font-size:35px}.flavor-card{padding:25px}.visit-details dl div{grid-template-columns:76px 1fr;gap:12px}.visit-details dd{font-size:15px}.space-section{padding-left:22px;padding-right:20px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 @media print{.site-header,.skip-link,.hero-actions,.text-link,.back-top{display:none}.hero,.story-section,.space-section{break-inside:avoid}.hero-visual{max-width:700px}.section-wrap{padding:40px 20px}.site-footer{padding:20px}.space-section{min-height:420px}body{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+
+    .logo-link img {
+        width: 42px;
+        height: 42px;
+        object-fit: cover;
+        border-radius: 50%;
+        display: block;
+    }
+
+.dish-grid {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 24px;
+}
+
+.dish-card {
+    background: #f5f5f7;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,.04);
+}
+
+    .dish-card img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+
+.dish-card-body {
+    padding: 22px;
+}
+
+    .dish-card-body h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .dish-card-body p {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #5f5f65;
+    }
+
+.menu-section {
+    background: #fff;
+}
+
+.menu-card {
+    max-width: 720px;
+    margin: 0 auto;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 14px 40px rgba(0,0,0,.08);
+}
+
+    .menu-card img {
+        width: 100%;
+        display: block;
+    }
+
+.menu-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+@media(max-width:760px) {
+    .logo-link span {
+        display: none;
+    }
+
+    .logo-link img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .dish-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dish-card img {
+        height: 240px;
+    }
+}
