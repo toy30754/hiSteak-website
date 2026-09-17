@@ -1210,3 +1210,14 @@ h2 {
         border-radius: 16px;
     }
 }
+@media(max-width:760px) {
+
+    .menu-section {
+        background-image: none;
+        background-color: #fff;
+    }
+
+    .hero-footnote {
+        display: none;
+    }
+}
