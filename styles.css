@@ -1161,3 +1161,27 @@ h2 {
     object-fit: contain;
     flex-shrink: 0;
 }
+
+.visit-actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    width: 100%;
+    margin-top: 28px;
+}
+    .visit-actions .button {
+        width: 100%;
+        min-height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px 16px;
+        white-space: nowrap;
+    }
+.ubereats-icon {
+    width: 28px;
+    height: 28px;
+}
+
+
