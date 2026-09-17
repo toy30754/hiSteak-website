@@ -1221,3 +1221,13 @@ h2 {
         display: none;
     }
 }
+.google-review-link {
+    color: #01556D;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+    .google-review-link:hover {
+        color: #d94d42;
+    }
