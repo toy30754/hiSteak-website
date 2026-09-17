@@ -1043,7 +1043,12 @@ h2 {
     }
 
 .menu-section {
-    background: #fff;
+    position: relative;
+    background-image: linear-gradient( rgba(255,255,255,0.78), rgba(255,255,255,0.78) ), url("assets/waves.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .menu-card {

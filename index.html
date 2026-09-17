@@ -14,272 +14,278 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">跳至主要內容</a>
-  <header class="site-header">
-    <nav class="nav-shell" aria-label="主要導覽">
-        <a class="wordmark logo-link" href="#top" aria-label="海牛排 Hi Steak 首頁">
-            <img src="assets/logo.jpg" alt="海牛排 Hi Steak Logo">
-            <span>海牛排 Hi Steak</span>
-        </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="開啟導覽選單"><span></span><span></span></button>
-      <div class="nav-links" id="nav-links">
-          <a href="#steaks">招牌餐點</a>
-          <a href="#menu">菜單</a>
-          <a href="#story">關於海牛排</a>
-          <a class="nav-visit" href="#visit">門市資訊</a>
-      </div>
-    </nav>
-  </header>
+    <a class="skip-link" href="#main">跳至主要內容</a>
+    <header class="site-header">
+        <nav class="nav-shell" aria-label="主要導覽">
+            <a class="wordmark logo-link" href="#top" aria-label="海牛排 Hi Steak 首頁">
+                <img src="assets/logo.jpg" alt="海牛排 Hi Steak Logo">
+                <span>海牛排 Hi Steak</span>
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="開啟導覽選單"><span></span><span></span></button>
+            <div class="nav-links" id="nav-links">
+                <a href="#steaks">招牌餐點</a>
+                <a href="#menu">菜單</a>
+                <a href="#story">關於海牛排</a>
+                <a class="nav-visit" href="#visit">門市資訊</a>
+            </div>
+        </nav>
+    </header>
 
-  <main id="main">
-      <section class="hero" id="top" aria-labelledby="hero-title">
-          <div class="hero-copy">
-              <p class="eyebrow">HI STEAK ・ TAICHUNG</p>
-              <h1 id="hero-title">熱鐵板上桌，<br>每一口都超滿足。</h1>
-              <p class="hero-description">海牛排 Hi Steak，提供平價又有份量的鐵板排餐，搭配荷包蛋、麵與濃郁醬汁，簡單就是好吃。</p>
-              <div class="hero-actions">
-                  <a class="button button-orange" href="#menu">查看菜單</a>
-                  <a class="text-link light-link" href="https://www.ubereats.com/tw/store/%E6%B5%B7%E7%89%9B%E6%8E%92-hi-steak/OaaZ4mz2W0aBt57IbIxc4g?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMiVFNiVCNSVCNyVFNyU4OSU5QiVFNiU4RSU5MkhpJTIwU1RFQUslMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjJDaElKQ3d6bk13QTlhVFFSQ2tyUXdpaFN1M3clMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIyZ29vZ2xlX3BsYWNlcyUyMiUyQyUyMmxhdGl0dWRlJTIyJTNBMjQuMTQxMTA0JTJDJTIybG9uZ2l0dWRlJTIyJTNBMTIwLjYzNjE3MjYlN0Q%3D&ps=1&sc=SEARCH_SUGGESTION" target="_blank" rel="noopener noreferrer">Uber Eats 點餐 <span aria-hidden="true">›</span></a>
-              </div>
-          </div>
-          <figure class="hero-visual">
-              <!-- 換照片：以自己的照片取代 assets/steak-hero.jpg，保留相同檔名。 -->
-              <img src="assets/banner.jpeg" width="1536" height="1024" alt="深色餐盤上的切片牛排，呈現焦香外層與粉嫩切面；示意照片" fetchpriority="high">
-          </figure>
-          <p class="hero-footnote">牛排，是主角。相聚，才是重點。</p>
-      </section>
+    <main id="main">
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow">HI STEAK ・ TAICHUNG</p>
+                <h1 id="hero-title">熱鐵板上桌，<br>每一口都超滿足。</h1>
+                <p class="hero-description">海牛排 Hi Steak，提供平價又有份量的鐵板排餐，搭配荷包蛋、麵與濃郁醬汁，簡單就是好吃。</p>
+                <div class="hero-actions">
+                    <a class="button button-orange" href="#menu">查看菜單</a>
+                    <a class="text-link light-link" href="https://www.ubereats.com/tw/store/%E6%B5%B7%E7%89%9B%E6%8E%92-hi-steak/OaaZ4mz2W0aBt57IbIxc4g?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMiVFNiVCNSVCNyVFNyU4OSU5QiVFNiU4RSU5MkhpJTIwU1RFQUslMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjJDaElKQ3d6bk13QTlhVFFSQ2tyUXdpaFN1M3clMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIyZ29vZ2xlX3BsYWNlcyUyMiUyQyUyMmxhdGl0dWRlJTIyJTNBMjQuMTQxMTA0JTJDJTIybG9uZ2l0dWRlJTIyJTNBMTIwLjYzNjE3MjYlN0Q%3D&ps=1&sc=SEARCH_SUGGESTION" target="_blank" rel="noopener noreferrer">Uber Eats 點餐 <span aria-hidden="true">›</span></a>
+                </div>
+            </div>
+            <figure class="hero-visual">
+                <!-- 換照片：以自己的照片取代 assets/steak-hero.jpg，保留相同檔名。 -->
+                <img src="assets/banner.jpeg" width="1536" height="1024" alt="深色餐盤上的切片牛排，呈現焦香外層與粉嫩切面；示意照片" fetchpriority="high">
+            </figure>
+            <p class="hero-footnote">牛排，是主角。相聚，才是重點。</p>
+        </section>
 
-      <section class="menu-section section-wrap" id="menu" aria-labelledby="menu-title">
-          <div class="section-heading">
-              <p class="eyebrow muted-eyebrow">MENU</p>
-              <h2 id="menu-title">完整菜單</h2>
-              <p class="section-description">主餐、雙拼加購、單點與價格，歡迎參考下方菜單。</p>
-          </div>
+        <section class="menu-section" id="menu" aria-labelledby="menu-title">
+            <div class="section-heading">
+                <p class="eyebrow muted-eyebrow">MENU</p>
+                <h2 id="menu-title">完整菜單</h2>
+                <p class="section-description">主餐、雙拼加購、單點與價格，歡迎參考下方菜單。</p>
+            </div>
 
-          <div class="menu-card">
-              <img src="assets/menu.jpg" alt="海牛排菜單">
-          </div>
+            <div class="menu-card">
+                <img src="assets/menu.jpg" alt="海牛排菜單">
+            </div>
 
-          <div class="menu-actions">
-              <a class="button button-orange" href="https://www.ubereats.com/tw/store/%E6%B5%B7%E7%89%9B%E6%8E%92-hi-steak/OaaZ4mz2W0aBt57IbIxc4g?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMiVFNiVCNSVCNyVFNyU4OSU5QiVFNiU4RSU5MkhpJTIwU1RFQUslMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjJDaElKQ3d6bk13QTlhVFFSQ2tyUXdpaFN1M3clMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIyZ29vZ2xlX3BsYWNlcyUyMiUyQyUyMmxhdGl0dWRlJTIyJTNBMjQuMTQxMTA0JTJDJTIybG9uZ2l0dWRlJTIyJTNBMTIwLjYzNjE3MjYlN0Q%3D&ps=1&sc=SEARCH_SUGGESTION" target="_blank" rel="noopener noreferrer">
-                  <img src="assets/UberEats.png"
-                       alt=""
-                       class="button-icon">
-                  Uber Eats 點餐
-              </a>
-          </div>
-      </section>
-      <section class="flavor-section section-wrap" id="steaks" aria-labelledby="flavor-title">
-          <div class="section-heading">
-              <p class="eyebrow muted-eyebrow">POPULAR DISHES</p>
-              <h2 id="flavor-title">招牌餐點，<br>每一道都值得回味。</h2>
-              <p class="section-description">熱騰騰鐵板現煎，搭配荷包蛋、鐵板麵與醬汁，就是海牛排最經典的滋味。</p>
-          </div>
+            <div class="menu-actions">
+                <a class="button button-UberEeats"
+                   href="https://www.ubereats.com/tw/store/%E6%B5%B7%E7%89%9B%E6%8E%92-hi-steak/OaaZ4mz2W0aBt57IbIxc4g"
+                   target="_blank"
+                   rel="noopener noreferrer">
 
-          <div class="dish-grid">
-              <article class="dish-card">
-                  <img src="assets/food-1.jpg" alt="海牛排招牌排餐 1">
-                  <div class="dish-card-body">
-                      <h3>經典沙朗嘿牛</h3>
-                      <p>紐西蘭牛卻說韓語。</p>
-                  </div>
-              </article>
+                    <img src="assets/UberEats.png"
+                         alt=""
+                         class="button-icon ubereats-icon">
 
-              <article class="dish-card">
-                  <img src="assets/food-2.jpg" alt="海牛排招牌排餐 2">
-                  <div class="dish-card-body">
-                      <h3>虎克船長香酥雞腿排</h3>
-                      <p>裹上蛋液加上輕薄的麵粉, 香酥無法擋。</p>
-                  </div>
-              </article>
+                    Uber Eats 點餐
+                </a>
+            </div>
+            <p class="hero-footnote">由 葛飾北齋 - 大都會藝術博物館： entry 45434, 公有領域</p>
+        </section>
+        <section class="flavor-section section-wrap" id="steaks" aria-labelledby="flavor-title">
+            <div class="section-heading">
+                <p class="eyebrow muted-eyebrow">POPULAR DISHES</p>
+                <h2 id="flavor-title">招牌餐點，<br>每一道都值得回味。</h2>
+                <p class="section-description">熱騰騰鐵板現煎，搭配荷包蛋、鐵板麵與醬汁，就是海牛排最經典的滋味。</p>
+            </div>
 
-              <article class="dish-card">
-                  <img src="assets/food-4.jpg" alt="海牛排招牌排餐 2">
-                  <div class="dish-card-body">
-                      <h3>0.000012959nmi厚切牛排</h3>
-                      <p>2.4 cm 是 0.000012959nmi 海哩喔。</p>
-                  </div>
-              </article>
+            <div class="dish-grid">
+                <article class="dish-card">
+                    <img src="assets/food-1.jpg" alt="海牛排招牌排餐 1">
+                    <div class="dish-card-body">
+                        <h3>經典沙朗嘿牛</h3>
+                        <p>紐西蘭牛卻說韓語。</p>
+                    </div>
+                </article>
 
-              <article class="dish-card">
-                  <img src="assets/food-3.jpg" alt="海牛排招牌排餐 3">
-                  <div class="dish-card-body">
-                      <h3>帶骨咕咕咕牛小排</h3>
-                      <p>會公雞叫的美國牛。</p>
-                  </div>
-              </article>
+                <article class="dish-card">
+                    <img src="assets/food-2.jpg" alt="海牛排招牌排餐 2">
+                    <div class="dish-card-body">
+                        <h3>虎克船長香酥雞腿排</h3>
+                        <p>裹上蛋液加上輕薄的麵粉, 香酥無法擋。</p>
+                    </div>
+                </article>
 
-              <article class="dish-card">
-                  <img src="assets/food-5.jpg" alt="海牛排招牌排餐 2">
-                  <div class="dish-card-body">
-                      <h3>經典里肌豬排</h3>
-                      <p>嚴選臺灣凸鼻捲尾四足獸。</p>
-                  </div>
-              </article>
+                <article class="dish-card">
+                    <img src="assets/food-4.jpg" alt="海牛排招牌排餐 2">
+                    <div class="dish-card-body">
+                        <h3>0.000012959nmi厚切牛排</h3>
+                        <p>2.4 cm 是 0.000012959nmi 海哩喔。</p>
+                    </div>
+                </article>
 
-              <article class="dish-card">
-                  <img src="assets/food-6.jpg" alt="海牛排招牌排餐 2">
-                  <div class="dish-card-body">
-                      <h3>就愛吃肉</h3>
-                      <p>想吃哪三種肉自己配😋純肉無麵</p>
-                  </div>
-              </article>
-          </div>
-      </section>
+                <article class="dish-card">
+                    <img src="assets/food-3.jpg" alt="海牛排招牌排餐 3">
+                    <div class="dish-card-body">
+                        <h3>帶骨咕咕咕牛小排</h3>
+                        <p>會公雞叫的美國牛。</p>
+                    </div>
+                </article>
 
-      <section class="story-section" id="story" aria-labelledby="story-title">
-          <div class="story-inner">
-              <p class="eyebrow muted-eyebrow">HELLO, HI STEAK.</p>
-              <h2 id="story-title">平價也能吃到，<br><span class="orange-text">奢華滿足的一餐。</span></h2>
-              <p class="story-copy">海牛排希望帶給大家的，<br>是簡單、直接又有份量的好味道。<br><br>以上均附餐包、紅茶及濃湯，<br>若您滿意收到的餐點(以及口味)，<br>請不吝給予我們Google五星好評。<br>每一個五星的讚譽都是對我們努力的最好肯定🥰</p>
-              <a class="text-link dark-link" href="#space">看看用餐空間 <span aria-hidden="true">›</span></a>
-          </div>
-          <div class="story-signature" aria-hidden="true">HiSteak<span>.</span></div>
-      </section>
+                <article class="dish-card">
+                    <img src="assets/food-5.jpg" alt="海牛排招牌排餐 2">
+                    <div class="dish-card-body">
+                        <h3>經典里肌豬排</h3>
+                        <p>嚴選臺灣凸鼻捲尾四足獸。</p>
+                    </div>
+                </article>
 
-      <section class="space-section" id="space" aria-labelledby="space-title">
-          <figure class="space-visual">
-              <img src="assets/Inrestaurant.jpg" width="1536" height="1024" alt="海牛排店內用餐空間" loading="lazy">
-          </figure>
+                <article class="dish-card">
+                    <img src="assets/food-6.jpg" alt="海牛排招牌排餐 2">
+                    <div class="dish-card-body">
+                        <h3>就愛吃肉</h3>
+                        <p>想吃哪三種肉自己配😋純肉無麵</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-          <div class="space-copy">
-              <p class="eyebrow">DINE IN HI STEAK</p>
-              <h2 id="space-title">舒適的空間，<br>剛剛好的距離。</h2>
-              <p>
-                  明亮溫暖的用餐空間，適合朋友聚餐，也適合下班後好好吃一頓。<br>
-                  不管是一個人來、和家人一起來，海牛排都希望讓你坐得自在、吃得滿足。
-              </p>
-              <a class="text-link light-link" href="#visit">查看門市資訊 <span aria-hidden="true">›</span></a>
-          </div>
+        <section class="story-section" id="story" aria-labelledby="story-title">
+            <div class="story-inner">
+                <p class="eyebrow muted-eyebrow">HELLO, HI STEAK.</p>
+                <h2 id="story-title">平價也能吃到，<br><span class="orange-text">奢華滿足的一餐。</span></h2>
+                <p class="story-copy">海牛排希望帶給大家的，<br>是簡單、直接又有份量的好味道。<br><br>以上均附餐包、紅茶及濃湯，<br>若您滿意收到的餐點(以及口味)，<br>請不吝給予我們Google五星好評。<br>每一個五星的讚譽都是對我們努力的最好肯定🥰</p>
+                <a class="text-link dark-link" href="#space">看看用餐空間 <span aria-hidden="true">›</span></a>
+            </div>
+            <div class="story-signature" aria-hidden="true">HiSteak<span>.</span></div>
+        </section>
 
-          <span class="image-note">店內實景</span>
-      </section>
+        <section class="space-section" id="space" aria-labelledby="space-title">
+            <figure class="space-visual">
+                <img src="assets/Inrestaurant.jpg" width="1536" height="1024" alt="海牛排店內用餐空間" loading="lazy">
+            </figure>
 
-      <section class="visit-section section-wrap" id="visit" aria-labelledby="visit-title">
+            <div class="space-copy">
+                <p class="eyebrow">DINE IN HI STEAK</p>
+                <h2 id="space-title">舒適的空間，<br>剛剛好的距離。</h2>
+                <p>
+                    明亮溫暖的用餐空間，適合朋友聚餐，也適合下班後好好吃一頓。<br>
+                    不管是一個人來、和家人一起來，海牛排都希望讓你坐得自在、吃得滿足。
+                </p>
+                <a class="text-link light-link" href="#visit">查看門市資訊 <span aria-hidden="true">›</span></a>
+            </div>
 
-          <div class="visit-intro">
-              <p class="eyebrow muted-eyebrow">SEE YOU AT HI STEAK.</p>
+            <span class="image-note">店內實景</span>
+        </section>
 
-              <h2 id="visit-title">
-                  下一頓，<br>
-                  就來海牛排。
-              </h2>
+        <section class="visit-section section-wrap" id="visit" aria-labelledby="visit-title">
 
-              <p>
-                  歡迎到店用餐，也可以電話預訂餐點，<br>
-                  或透過 Uber Eats 外送到家。
-              </p>
-          </div>
+            <div class="visit-intro">
+                <p class="eyebrow muted-eyebrow">SEE YOU AT HI STEAK.</p>
 
+                <h2 id="visit-title">
+                    下一頓，<br>
+                    就來海牛排。
+                </h2>
 
-          <div class="visit-card">
-
-              <dl>
-
-                  <div>
-                      <dt>門市地址</dt>
-                      <dd>
-                          台中市南屯區南屯路二段721-1號
-                      </dd>
-                  </div>
+                <p>
+                    歡迎到店用餐，也可以電話預訂餐點，<br>
+                    或透過 Uber Eats 外送到家。
+                </p>
+            </div>
 
 
-                  <div>
-                      <dt>營業時間</dt>
-                      <dd>
-                          周一至周五 下午 4:30 ～ 晚上 9:30<br>
-                          週六、週日 早上 11:00 ～ 晚上 9:30
-                      </dd>
-                  </div>
+            <div class="visit-card">
+
+                <dl>
+
+                    <div>
+                        <dt>門市地址</dt>
+                        <dd>
+                            台中市南屯區南屯路二段721-1號
+                        </dd>
+                    </div>
 
 
-                  <div>
-                      <dt>電話訂位 / 訂餐</dt>
-                      <dd>
-                          <a class="inline-link" href="tel:0436098099">
-                              04-3609-8099
-                          </a>
-                      </dd>
-                  </div>
+                    <div>
+                        <dt>營業時間</dt>
+                        <dd>
+                            周一至周五 下午 4:30 ～ 晚上 9:30<br>
+                            週六、週日 早上 11:00 ～ 晚上 9:30
+                        </dd>
+                    </div>
 
 
-              </dl>
+                    <div>
+                        <dt>電話訂位 / 訂餐</dt>
+                        <dd>
+                            <a class="inline-link" href="tel:0436098099">
+                                04-3609-8099
+                            </a>
+                        </dd>
+                    </div>
 
 
-              <div class="visit-actions">
-
-                  <a class="button button-map"
-                     href="https://www.google.com/maps/place/%E6%B5%B7%E7%89%9B%E6%8E%92Hi+STEAK/@24.116332,120.6234946,13z/data=!4m10!1m2!2m1!1z5rW354mb5o6S!3m6!1s0x34693d0033e70c0b:0x7cbb5228c2d04a0a!8m2!3d24.141104!4d120.6361726!15sCgnmtbfniZvmjpJaDCIK5rW3IOeJm-aOkpIBCnJlc3RhdXJhbnSaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMjFTUmxveU1XcFZNVlozVTBVNVZHVkhNWFprVld4M1drZGFNMkpJWXhBQuABAPoBBAgAEAk!16s%2Fg%2F11x5whh_d_?entry=ttu"
-                     target="_blank"
-                     rel="noopener noreferrer">
-
-                      <img src="assets/googleMap.png"
-                           alt=""
-                           class="button-icon">
-
-                      Google Maps
-                  </a>
+                </dl>
 
 
-                  <a class="button button-instagram"
-                     href="https://www.instagram.com/hi_steakhouse?igsh=dmRtcHB0NjZyM3Jp"
-                     target="_blank"
-                     rel="noopener noreferrer">
+                <div class="visit-actions">
 
-                      <img src="assets/Instagram.png"
-                           alt=""
-                           class="button-icon">
+                    <a class="button button-map"
+                       href="https://www.google.com/maps/place/%E6%B5%B7%E7%89%9B%E6%8E%92Hi+STEAK/@24.116332,120.6234946,13z/data=!4m10!1m2!2m1!1z5rW354mb5o6S!3m6!1s0x34693d0033e70c0b:0x7cbb5228c2d04a0a!8m2!3d24.141104!4d120.6361726!15sCgnmtbfniZvmjpJaDCIK5rW3IOeJm-aOkpIBCnJlc3RhdXJhbnSaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMjFTUmxveU1XcFZNVlozVTBVNVZHVkhNWFprVld4M1drZGFNMkpJWXhBQuABAPoBBAgAEAk!16s%2Fg%2F11x5whh_d_?entry=ttu"
+                       target="_blank"
+                       rel="noopener noreferrer">
 
-                      Instagram
-                  </a>
+                        <img src="assets/googleMap.png"
+                             alt=""
+                             class="button-icon">
 
-
-                  <a class="button button-UberEeats"
-                     href="https://www.ubereats.com/tw/store/%E6%B5%B7%E7%89%9B%E6%8E%92-hi-steak/OaaZ4mz2W0aBt57IbIxc4g"
-                     target="_blank"
-                     rel="noopener noreferrer">
-
-                      <img src="assets/UberEats.png"
-                           alt=""
-                           class="button-icon ubereats-icon">
-
-                      Uber Eats
-                  </a>
-
-              </div>
+                        Google Maps
+                    </a>
 
 
-              <div class="map-container">
+                    <a class="button button-instagram"
+                       href="https://www.instagram.com/hi_steakhouse?igsh=dmRtcHB0NjZyM3Jp"
+                       target="_blank"
+                       rel="noopener noreferrer">
 
-                  <iframe src="https://www.google.com/maps?q=臺中市南屯區永定里南屯路二段721-1號&output=embed"
-                          width="100%"
-                          height="320"
-                          style="border:0;"
-                          allowfullscreen=""
-                          loading="lazy"
-                          referrerpolicy="no-referrer-when-downgrade"
-                          title="海牛排 Hi Steak Google Maps 地圖">
-                  </iframe>
+                        <img src="assets/Instagram.png"
+                             alt=""
+                             class="button-icon">
 
-              </div>
+                        Instagram
+                    </a>
 
-          </div>
 
-      </section>
-  </main>
+                    <a class="button button-UberEeats"
+                       href="https://www.ubereats.com/tw/store/%E6%B5%B7%E7%89%9B%E6%8E%92-hi-steak/OaaZ4mz2W0aBt57IbIxc4g"
+                       target="_blank"
+                       rel="noopener noreferrer">
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-        <p class="draft-note">海牛排 Hi Steak｜台中南屯平價牛排，歡迎到店享用或使用 Uber Eats 外送服務。</p>
-      <div class="footer-bottom">
-          <a class="wordmark footer-wordmark logo-link" href="#top" aria-label="海牛排 Hi Steak 回到頂端">
-              <img src="assets/logo.jpg" alt="海牛排 Hi Steak Logo">
-              <span>海牛排 Hi Steak</span>
-          </a>
-          <p>© <span id="year">2026</span> 海牛排 Hi Steak. All rights reserved.</p>
-        <a class="back-top" href="#top">回到頂端 <span aria-hidden="true">↑</span></a>
-      </div>
-    </div>
-  </footer>
+                        <img src="assets/UberEats.png"
+                             alt=""
+                             class="button-icon ubereats-icon">
+
+                        Uber Eats
+                    </a>
+
+                </div>
+
+
+                <div class="map-container">
+
+                    <iframe src="https://www.google.com/maps?q=臺中市南屯區永定里南屯路二段721-1號&output=embed"
+                            width="100%"
+                            height="320"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="海牛排 Hi Steak Google Maps 地圖">
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="draft-note">海牛排 Hi Steak｜台中南屯平價牛排，歡迎到店享用或使用 Uber Eats 外送服務。</p>
+            <div class="footer-bottom">
+                <a class="wordmark footer-wordmark logo-link" href="#top" aria-label="海牛排 Hi Steak 回到頂端">
+                    <img src="assets/logo.jpg" alt="海牛排 Hi Steak Logo">
+                    <span>海牛排 Hi Steak</span>
+                </a>
+                <p>© <span id="year">2026</span> 海牛排 Hi Steak. All rights reserved.</p>
+                <a class="back-top" href="#top">回到頂端 <span aria-hidden="true">↑</span></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
